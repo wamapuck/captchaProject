@@ -1,10 +1,10 @@
 from captcha.image import ImageCaptcha
 import random
 
-image = ImageCaptcha(width=180, height=90)
+image = ImageCaptcha(width=180, height=90) # 이미지 사이즈
 
-def captchaGenerator():
-    captchaKey = str(random.randint(100000,1000000))
+def captchaGenerator():                                 #이미지 생성 함수
+    captchaKey = str(random.randint(100000,1000000))    #이미지에 들어갈 숫자 범위 지정과 램덤으로 수 생성
 
     image.generate(captchaKey)
 
